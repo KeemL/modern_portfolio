@@ -6,11 +6,11 @@ import Experiences from "./ui/experiences/page";
 export default function Home() {
   return (
     <div className="bg-red-200">
-      <div className="text-center">
-        <p className="text-base"> Dive Into My</p>
-        <h1 className="text-4x1 font-bold"> Experience </h1>
+      <div className="text-center mb-4">
+        <p className="text-4xl text-black"> Dive Into My</p>
+        <h1 className="text-6xl font-bold text-neutral-200"> Experience </h1>
       </div>
-      <div className="flex max-h-1/2 px-30">
+      <div className="flex place-content-center max-h-1/2 px-30 gap-15">
         <SkillCard
           header="Languages and Frameworks"
           skills={[

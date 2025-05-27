@@ -59,16 +59,17 @@ const skillType = skillGroup[1];
 export default function SkillCard({ header, skills }: SkillGroup) {
   return (
     // entire div holding the header and skill/title div
-    <div className="bg-foreground m-2.5 w-full rounded-lg border-3 border-black p-6 shadow-sm">
-      <h1 className="pb-2 text-center text-3xl font-bold text-black">
+    <div className="bg-foreground mb-10 w-2/5 rounded-lg border-3 border-black p-3 pb-0 shadow-sm">
+      <h1 className="pt-1 text-center text-3xl font-bold text-black">
         {header}
       </h1>
-      <div className="row-span-full grid grid-cols-2 justify-items-center bg-amber-400">
+      {/* removed the bg-amber-300 */}
+      <div className="grid grid-cols-2 gap-2 place-content-center rounded-md">
         {skills.map((skill, index) => (
           // individual, matching skill title div
           <div
             key={index}
-            className="width:50% flex space-x-2 bg-amber-800 p-2"
+            className="w-3/4 flex place-self-center space-x-2 my-6"
           >
             {/* checkmark image icon */}
             <img
@@ -78,7 +79,7 @@ export default function SkillCard({ header, skills }: SkillGroup) {
             />
             {/* skill title and level text */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-800">
+              <h3 className="min-w-lg text-xl font-semibold text-gray-800">
                 {skill.title}
               </h3>
               <p className="font-light text-gray-600">{skill.level}</p>
