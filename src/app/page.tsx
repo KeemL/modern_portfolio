@@ -5,41 +5,39 @@ import Experiences from "./ui/experiences/page";
 
 export default function Home() {
   return (
-    <div className="bg-red-200 s">
-      <div className="text-center " >
+    <div className="bg-red-200">
+      <div className="text-center">
         <p className="text-base"> Dive Into My</p>
         <h1 className="text-4x1 font-bold"> Experience </h1>
-    </div>
-    <div className="flex p-30 ">
-      
-      <SkillCard
-        header="Languages and Frameworks"
-        skills={[
-          { title: "Java", level: "Experienced" },
-          { title: "Python", level: "Experienced" },
-          { title: "Spring Boot", level: "Experienced" },
-          { title: "Javascript", level: "Experienced" },
-          { title: "Tailwind", level: "Experienced" },
-          { title: "C+", level: "Experienced" },
-        ]}
-      />
+      </div>
+      <div className="flex max-h-1/2 px-30">
+        <SkillCard
+          header="Languages and Frameworks"
+          skills={[
+            { title: "Java", level: "Experienced" },
+            { title: "Python", level: "Experienced" },
+            { title: "Spring Boot", level: "Experienced" },
+            { title: "Javascript", level: "Experienced" },
+            { title: "Tailwind", level: "Experienced" },
+            { title: "C+", level: "Experienced" },
+          ]}
+        />
 
-      <SkillCard
-        header="Tools and Programs"
-        skills={[
-          { title: "Unreal Engine", level: "Experienced" },
-          { title: "Unity", level: "Experienced" },
-          { title: "After Effects", level: "Experienced" },
-          { title: "Premiere Pro", level: "Experienced" },
-          { title: "Photoshop", level: "Experienced" },
-          { title: "Git", level: "Experienced" }
-        ]}
-      />
+        <SkillCard
+          header="Tools and Programs"
+          skills={[
+            { title: "Unreal Engine", level: "Experienced" },
+            { title: "Unity", level: "Experienced" },
+            { title: "After Effects", level: "Experienced" },
+            { title: "Premiere Pro", level: "Experienced" },
+            { title: "Photoshop", level: "Experienced" },
+            { title: "Git", level: "Experienced" },
+          ]}
+        />
 
-      {/* <ProjectCard title="testing" stack="nope"  description="hope this works"/> */}
+        {/* <ProjectCard title="testing" stack="nope"  description="hope this works"/> */}
       </div>
     </div>
-    
   );
 }
 
