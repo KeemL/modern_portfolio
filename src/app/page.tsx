@@ -1,42 +1,24 @@
 import Image from "next/image";
 import ProjectCard from "./components/ProjectCard";
 import SkillCard from "./components/SkillCard";
-import Experiences from "./ui/experiences/page";
+import Experiences from "@/app/experiences/page";
+import Projects from "@/app/projects/page";
 
 export default function Home() {
   return (
     <div className="bg-red-200">
       <div className="text-center mb-4">
         <p className="text-4xl text-black"> Dive Into My</p>
-        <h1 className="text-6xl font-bold text-neutral-200"> Experience </h1>
+        <h1 className="text-6xl font-bold text-neutral-100"> Experience </h1>
       </div>
-      <div className="flex place-content-center max-h-1/2 px-30 gap-15">
-        <SkillCard
-          header="Languages and Frameworks"
-          skills={[
-            { title: "Java", level: "Experienced" },
-            { title: "Python", level: "Experienced" },
-            { title: "Spring Boot", level: "Experienced" },
-            { title: "Javascript", level: "Experienced" },
-            { title: "Tailwind", level: "Experienced" },
-            { title: "C+", level: "Experienced" },
-          ]}
-        />
-
-        <SkillCard
-          header="Tools and Programs"
-          skills={[
-            { title: "Unreal Engine", level: "Experienced" },
-            { title: "Unity", level: "Experienced" },
-            { title: "After Effects", level: "Experienced" },
-            { title: "Premiere Pro", level: "Experienced" },
-            { title: "Photoshop", level: "Experienced" },
-            { title: "Git", level: "Experienced" },
-          ]}
-        />
-
-        {/* <ProjectCard title="testing" stack="nope"  description="hope this works"/> */}
+      <Experiences/>
+      <div className="text-center mb-4">
+        <p className="text-4xl text-black"> Explore</p>
+        <h1 className="text-6xl font-bold text-neutral-100"> Projects </h1>
       </div>
+      <Projects/>
+      
+
     </div>
   );
 }
