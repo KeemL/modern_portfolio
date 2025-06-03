@@ -15,8 +15,8 @@ function checkCategory(project: Project, category: ProjectCategory) {
   if (category === "All") {
     return project;
   }
+
   if (project["category"] === category) {
-    console.log("returning true");
     return project;
   }
 }
