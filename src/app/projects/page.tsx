@@ -14,34 +14,36 @@ export default function Projects() {
 
   return (
     <div>
-      <div className="flex gap-4 bg-pink-400">
-        <button>HEY</button>
+      <div className="flex gap-4 py-4 text-2xl">
+        <h1 className="font ml-10 place-self-center font-bold text-black">
+          Filter:
+        </h1>
         <button
-          className="rounded bg-blue-600 px-4 py-2 text-white"
+          className="w-26 rounded bg-blue-600 px-4 py-2 text-white"
+          onClick={() => handleClick("All")}
+        >
+          All
+        </button>
+        <button
+          className="h-20 w-40 rounded bg-blue-600 px-4 py-2 text-white"
           onClick={() => handleClick("Applications")}
         >
           Applications
         </button>
         <button
-          className="rounded bg-blue-600 px-4 py-2 text-white"
+          className="w-26 rounded bg-blue-600 px-4 py-2 text-white"
           onClick={() => handleClick("Games")}
         >
           Games
         </button>
         <button
-          className="rounded bg-blue-600 px-4 py-2 text-white"
+          className="w-40 rounded bg-blue-600 px-4 py-2 text-white"
           onClick={() => handleClick("Animation")}
         >
           Animation
         </button>
-        <button
-          className="rounded bg-blue-600 px-4 py-2 text-white"
-          onClick={() => handleClick("All")}
-        >
-          All
-        </button>
       </div>
-      <div className="bg-sky-600">
+      <div className="">
         {" "}
         <FilteredProjects category={selectedCategory} />
       </div>

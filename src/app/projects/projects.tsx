@@ -12,9 +12,11 @@ export default function FilteredProjects({ category }: ProjectsProps) {
 
   // const { title, stack, description, video, imageUrl, link } = project;
   return (
-    <div className="">
+    <div className="m-4">
       {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
+        <div key={project.id} className="m-4">
+          <ProjectCard key={project.id} project={project} />
+        </div>
       ))}
     </div>
   );

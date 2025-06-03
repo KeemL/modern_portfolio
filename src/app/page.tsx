@@ -3,22 +3,26 @@ import ProjectCard from "./components/ProjectCard";
 import SkillCard from "./components/SkillCard";
 import Experiences from "@/app/experiences/page";
 import Projects from "@/app/projects/page";
+import About from "./about/about";
 
 export default function Home() {
   return (
-    <div className="bg-red-200">
-      <div className="text-center mb-4">
+    <div className="gap-10 bg-red-200">
+      <About />
+
+      <div className="mb-4 text-center">
         <p className="text-4xl text-black"> Dive Into My</p>
         <h1 className="text-6xl font-bold text-neutral-100"> Experience </h1>
       </div>
-      <Experiences/>
-      <div className="text-center mb-4">
-        <p className="text-4xl text-black"> Explore</p>
+      <div>
+        <Experiences />
+      </div>
+
+      <div className="mb-4 text-center">
+        <p className="text-4xl text-black"> Explore My</p>
         <h1 className="text-6xl font-bold text-neutral-100"> Projects </h1>
       </div>
-      <Projects/>
-      
-
+      <Projects />
     </div>
   );
 }
