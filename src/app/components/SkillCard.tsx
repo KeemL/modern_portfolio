@@ -37,7 +37,6 @@ const skillGroup: SkillGroup[] = [
 const skillTitle = skillGroup[0];
 const skillType = skillGroup[1];
 
-
 export default function SkillCard({ header, skills }: SkillGroup) {
   return (
     // entire div holding the header and skill/title div
@@ -46,12 +45,12 @@ export default function SkillCard({ header, skills }: SkillGroup) {
         {header}
       </h1>
       {/* removed the bg-amber-300 */}
-      <div className="grid grid-cols-2 gap-2 place-content-center rounded-md">
+      <div className="grid grid-cols-2 place-content-center gap-2 rounded-md">
         {skills.map((skill, index) => (
           // individual, matching skill title div
           <div
             key={index}
-            className="w-3/4 flex place-self-center space-x-2 my-6"
+            className="my-6 flex w-3/4 space-x-2 place-self-center"
           >
             {/* checkmark image icon */}
             <img

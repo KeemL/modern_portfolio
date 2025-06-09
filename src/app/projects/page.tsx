@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] =
-    useState<ProjectCategory>("Animation");
+    useState<ProjectCategory>("All");
 
   function handleClick(category: ProjectCategory) {
     setSelectedCategory(category);
@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <div>
       <div className="flex gap-4 py-4 text-2xl">
-        <h1 className="font ml-10 place-self-center font-bold text-black">
+        <h1 className="ml-14 place-self-center font-bold text-black">
           Filter:
         </h1>
         <button
@@ -25,16 +25,16 @@ export default function Projects() {
           All
         </button>
         <button
-          className="h-20 w-40 rounded bg-blue-600 px-4 py-2 text-white"
+          className="w-40 rounded bg-blue-600 px-4 py-2 text-white"
           onClick={() => handleClick("Applications")}
         >
           Applications
         </button>
         <button
-          className="w-26 rounded bg-blue-600 px-4 py-2 text-white"
-          onClick={() => handleClick("Games")}
+          className="w-40 rounded bg-blue-600 px-4 py-2 text-white"
+          onClick={() => handleClick("Game Dev")}
         >
-          Games
+          Game Dev
         </button>
         <button
           className="w-40 rounded bg-blue-600 px-4 py-2 text-white"
@@ -44,7 +44,6 @@ export default function Projects() {
         </button>
       </div>
       <div className="">
-        {" "}
         <FilteredProjects category={selectedCategory} />
       </div>
     </div>

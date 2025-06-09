@@ -1,28 +1,43 @@
-import Image from "next/image";
 import ProjectCard from "./components/ProjectCard";
 import SkillCard from "./components/SkillCard";
 import Experiences from "@/app/experiences/page";
 import Projects from "@/app/projects/page";
-import About from "./about/about";
+import About from "./about/page";
+import Navbar from "@/app/components/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="gap-10 bg-red-200">
-      <About />
+    <div className="bg-testcolor">
+      <Image
+        className="absolute right-5 bottom-0"
+        src="/images/downArrow.png"
+        alt="Down Arrow icon for navigation"
+        width={75}
+        height={75}
+      />
 
-      <div className="mb-4 text-center">
-        <p className="text-4xl text-black"> Dive Into My</p>
+      <Navbar />
+
+      <section id="about" className="py-20">
+        <About />
+      </section>
+
+      <section className="mb-4 text-center">
+        <p className="text-4xl text-gray-700"> Dive Into My</p>
         <h1 className="text-6xl font-bold text-neutral-100"> Experience </h1>
-      </div>
-      <div>
-        <Experiences />
-      </div>
+      </section>
 
-      <div className="mb-4 text-center">
-        <p className="text-4xl text-black"> Explore My</p>
+      <section id="experience">
+        <Experiences />
+      </section>
+
+      <section id="projects" className="pb-20 text-center">
+        <p className="text-4xl text-gray-700"> Explore My</p>
         <h1 className="text-6xl font-bold text-neutral-100"> Projects </h1>
-      </div>
-      <Projects />
+
+        <Projects />
+      </section>
     </div>
   );
 }
