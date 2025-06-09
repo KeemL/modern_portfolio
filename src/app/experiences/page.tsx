@@ -20,7 +20,7 @@ export default function Experiences() {
         skills={[
           { title: "Unreal Engine", level: "Experienced" },
           { title: "Unity", level: "Experienced" },
-          { title: "After Effects", level: "Experienced" },
+          { title: "Figma", level: "Experienced" },
           { title: "Premiere Pro", level: "Experienced" },
           { title: "Photoshop", level: "Experienced" },
           { title: "Git", level: "Experienced" },

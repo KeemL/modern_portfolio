@@ -1,4 +1,9 @@
-export type ProjectCategory = "Applications" | "Game Dev" | "Animation" | "All";
+export type ProjectCategory =
+  | "Applications"
+  | "Game Dev"
+  | "Animation"
+  | "Design"
+  | "All";
 
 // const categories: ProjectCategory[] = [
 //   "All",
