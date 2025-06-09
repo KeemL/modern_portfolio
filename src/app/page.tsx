@@ -1,6 +1,4 @@
-import ProjectCard from "./components/ProjectCard";
-import SkillCard from "./components/SkillCard";
-import Experiences from "@/app/experiences/page";
+import Skills from "@/app/skills/page";
 import Projects from "@/app/projects/page";
 import About from "./about/page";
 import Navbar from "@/app/components/Navbar";
@@ -23,21 +21,21 @@ export default function Home() {
         <About />
       </section>
 
-      <section className="mb-4 text-center">
-        <p className="text-4xl text-gray-700"> Dive Into My</p>
-        <h1 className="text-6xl font-bold text-neutral-100"> Experience </h1>
-      </section>
+      {/* <section id="skills" className="">
+        <div className="text-center">
+          <p className="text-4xl text-gray-700"> Dive Into My</p>
+          <h1 className="mb-12 text-6xl font-bold text-neutral-100">Skills</h1>
+        </div>
 
-      <section id="experience">
-        <Experiences />
-      </section>
+        <Skills />
+      </section> */}
 
-      <section id="projects" className="pb-20 text-center">
+      {/* <section id="projects" className="pb-20 text-center">
         <p className="text-4xl text-gray-700"> Explore My</p>
-        <h1 className="text-6xl font-bold text-neutral-100"> Projects </h1>
+        <h1 className="mb-4 text-6xl font-bold text-neutral-100"> Projects </h1>
 
         <Projects />
-      </section>
+      </section> */}
     </div>
   );
 }

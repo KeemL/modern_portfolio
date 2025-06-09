@@ -1,6 +1,5 @@
 "use client";
-import ProjectCard from "@/app/components/ProjectCard";
-import { Project, ProjectCategory } from "./projectData";
+import { ProjectCategory } from "./projectData";
 import FilteredProjects from "./projects";
 import { useState } from "react";
 

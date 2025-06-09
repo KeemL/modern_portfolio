@@ -1,6 +1,6 @@
 import SkillCard from "@/app/components/SkillCard";
 
-export default function Experiences() {
+export default function Skills() {
   return (
     <div className="flex max-h-1/2 place-content-center gap-15 px-30">
       <SkillCard

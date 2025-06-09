@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* <img src={video} /> */}
 
       <div>
-        <h2 className="flex max-h-fit w-fit max-w-fit gap-x-6 justify-self-center rounded bg-amber-200 px-2 py-1 pl-2 text-xl font-semibold text-black">
+        <h2 className="flex max-h-fit w-fit max-w-fit gap-x-4 justify-self-center rounded bg-amber-200 px-2 py-1 pl-2 text-xl font-semibold text-black">
           {stack.map((tech, i) => (
             <span key={i}>{tech}</span>
           ))}
@@ -29,6 +29,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <h1 className="max-h-fit gap-y-2 rounded bg-purple-500 p-2 text-xl text-pretty hyphens-none md:text-balance">
         {description}
       </h1>
+
+      <a className="w-fit rounded-sm bg-white p-2 text-black">Learn More </a>
     </div>
   );
 }
