@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="bg-vandyke flex h-20 items-center justify-between">
+    <nav className="bg-vandyke sticky top-0 flex h-20 items-center justify-between">
       <div className="">
         <p className="text-olive ml-4 text-3xl font-bold">HAKEEM LINGO</p>
       </div>

@@ -7,13 +7,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-testcolor">
-      <Image
+      {/* <Image
         className="absolute right-5 bottom-0"
         src="/images/downArrow.png"
         alt="Down Arrow icon for navigation"
         width={75}
         height={75}
-      />
+      /> */}
 
       <Navbar />
 

@@ -53,10 +53,10 @@ export default function SkillCard({ header, skills }: SkillGroup) {
           >
             {/* checkmark image icon */}
             <Image
-              // className="h-16 w-16"
               src="/images/checkmark.png"
-              width={16}
-              height={16}
+              width={64}
+              height={64}
+              quality={100}
               alt={`Checkmark icon for ${skill.title}`}
             />
             {/* skill title and level text */}
