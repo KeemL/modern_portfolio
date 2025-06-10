@@ -2,7 +2,7 @@ import Skills from "@/app/skills/page";
 import Projects from "@/app/projects/page";
 import About from "./about/page";
 import Navbar from "@/app/components/Navbar";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
