@@ -1,4 +1,5 @@
 "use client";
+import CategoryButton from "../components/CategoryButton";
 import { ProjectCategory } from "./projectData";
 import FilteredProjects from "./projects";
 import { useState } from "react";
@@ -7,9 +8,9 @@ export default function Projects() {
   const [selectedCategory, setSelectedCategory] =
     useState<ProjectCategory>("All");
 
-  function handleClick(category: ProjectCategory) {
-    setSelectedCategory(category);
-  }
+  // function handleClick(category: ProjectCategory) {
+  //   setSelectedCategory(category);
+  // }
 
   return (
     <div>
@@ -17,30 +18,26 @@ export default function Projects() {
         <h1 className="ml-14 place-self-center font-bold text-black">
           Filter:
         </h1>
-        <button
-          className="w-26 rounded bg-blue-600 px-4 py-2 text-white"
-          onClick={() => handleClick("All")}
-        >
-          All
-        </button>
-        <button
-          className="w-40 rounded bg-blue-600 px-4 py-2 text-white"
-          onClick={() => handleClick("Applications")}
-        >
-          Applications
-        </button>
-        <button
-          className="w-40 rounded bg-blue-600 px-4 py-2 text-white"
-          onClick={() => handleClick("Game Dev")}
-        >
-          Game Dev
-        </button>
-        <button
-          className="w-40 rounded bg-blue-600 px-4 py-2 text-white"
-          onClick={() => handleClick("Animation")}
-        >
-          Animation
-        </button>
+        <CategoryButton
+          category="All"
+          selectedCategory={selectedCategory}
+          onClick={setSelectedCategory}
+        />
+        <CategoryButton
+          category="Applications"
+          selectedCategory={selectedCategory}
+          onClick={setSelectedCategory}
+        />
+        <CategoryButton
+          category="Game Dev"
+          selectedCategory={selectedCategory}
+          onClick={setSelectedCategory}
+        />
+        <CategoryButton
+          category="Animation"
+          selectedCategory={selectedCategory}
+          onClick={setSelectedCategory}
+        />
       </div>
       <div className="">
         <FilteredProjects category={selectedCategory} />

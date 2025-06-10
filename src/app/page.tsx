@@ -21,21 +21,21 @@ export default function Home() {
         <About />
       </section>
 
-      {/* <section id="skills" className="">
+      <section id="skills" className="">
         <div className="text-center">
           <p className="text-4xl text-gray-700"> Dive Into My</p>
           <h1 className="mb-12 text-6xl font-bold text-neutral-100">Skills</h1>
         </div>
 
         <Skills />
-      </section> */}
+      </section>
 
-      {/* <section id="projects" className="pb-20 text-center">
+      <section id="projects" className="pb-20 text-center">
         <p className="text-4xl text-gray-700"> Explore My</p>
         <h1 className="mb-4 text-6xl font-bold text-neutral-100"> Projects </h1>
 
         <Projects />
-      </section> */}
+      </section>
     </div>
   );
 }

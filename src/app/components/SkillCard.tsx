@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Skill {
   title: string;
   level: string;
@@ -13,29 +15,26 @@ interface SkillGroup {
 //use type to define primitive types
 
 // SkillGroup arrays with a header string + skills array
-const skillGroup: SkillGroup[] = [
-  {
-    header: "Languages and Frameworks",
-    skills: [
-      { title: "Java", level: "Experienced" },
-      { title: "Python", level: "Intermediate" },
-      // { title: "C+", level: "Competent" },
-      { title: "Javascript", level: "Experienced" },
-      { title: "Spring Boot", level: "Experienced" },
-    ],
-  },
-  {
-    header: "Languages",
-    skills: [
-      { title: "Java", level: "Experienced" },
-      { title: "Python", level: "Intermediate" },
-      // { title: "C+", level: "Competent" },
-    ],
-  },
-];
-
-const skillTitle = skillGroup[0];
-const skillType = skillGroup[1];
+// const skillGroup: SkillGroup[] = [
+//   {
+//     header: "Languages and Frameworks",
+//     skills: [
+//       { title: "Java", level: "Experienced" },
+//       { title: "Python", level: "Intermediate" },
+//       // { title: "C+", level: "Competent" },
+//       { title: "Javascript", level: "Experienced" },
+//       { title: "Spring Boot", level: "Experienced" },
+//     ],
+//   },
+//   {
+//     header: "Languages",
+//     skills: [
+//       { title: "Java", level: "Experienced" },
+//       { title: "Python", level: "Intermediate" },
+//       // { title: "C+", level: "Competent" },
+//     ],
+//   },
+// ];
 
 export default function SkillCard({ header, skills }: SkillGroup) {
   return (
@@ -53,9 +52,11 @@ export default function SkillCard({ header, skills }: SkillGroup) {
             className="my-6 flex w-3/4 space-x-2 place-self-center"
           >
             {/* checkmark image icon */}
-            <img
-              className="h-16 w-16"
+            <Image
+              // className="h-16 w-16"
               src="/images/checkmark.png"
+              width={16}
+              height={16}
               alt={`Checkmark icon for ${skill.title}`}
             />
             {/* skill title and level text */}

@@ -1,11 +1,10 @@
 export default function Navbar() {
   return (
-    <nav className="bg-vandyke flex h-20 justify-end-safe">
-      <div className="self-center bg-green-600">
-        <p> HAKEEM LINGO</p>
+    <nav className="bg-vandyke flex h-20 items-center justify-between">
+      <div className="">
+        <p className="text-olive ml-4 text-3xl font-bold">HAKEEM LINGO</p>
       </div>
-      <ul className="mr-8 flex space-x-6 place-self-center text-3xl tracking-tight text-black">
-        <div className="text-right"></div>
+      <ul className="mr-8 flex space-x-6 text-3xl tracking-tight text-black">
         <li>
           <a href="#about" className="hover:underline">
             About

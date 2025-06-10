@@ -13,6 +13,8 @@
   --color-testcolor: #d3bcc0;
   --color-vandyke: #523f38;
   --color-dodgerblue: #0496ff;
+  --color-calmblue: #0068b8;
+  --color-olive: #899d78;
 }
 
 @media (prefers-color-scheme: dark) {

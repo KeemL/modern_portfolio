@@ -52,7 +52,7 @@ export const projectsData: Project[] = [
     id: "proj4",
     title: "McDonald's Interactive Game",
     description:
-      "A Unity-3D game where the player collects coins and completes QTEs to  ",
+      "A Unity-3D game where the player collects coins and completes QTEs to navigate a tense fast food situation.",
     category: "Game Dev",
     stack: ["Unity", "C#"],
   },
