@@ -6,7 +6,7 @@ import Navbar from "@/app/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="bg-testcolor">
+    <div className="bg-neutral-200">
       {/* <Image
         className="absolute right-5 bottom-0"
         src="/images/downArrow.png"
@@ -17,22 +17,24 @@ export default function Home() {
 
       <Navbar />
 
-      <section id="about" className="py-20">
+      <section
+        id="about"
+        className="flex h-screen -translate-y-30 items-center justify-center"
+      >
         <About />
       </section>
 
       <section id="skills" className="">
         <div className="text-center">
           <p className="text-4xl text-gray-700"> Dive Into My</p>
-          <h1 className="mb-12 text-6xl font-bold text-neutral-100">Skills</h1>
+          <h1 className="text-olive mb-12 text-6xl font-bold">Skills</h1>
         </div>
-
         <Skills />
       </section>
 
-      <section id="projects" className="pb-20 text-center">
+      <section id="projects" className="pt-40 pb-20 text-center">
         <p className="text-4xl text-gray-700"> Explore My</p>
-        <h1 className="mb-4 text-6xl font-bold text-neutral-100"> Projects </h1>
+        <h1 className="text-olive mb-4 text-6xl font-bold"> Projects </h1>
 
         <Projects />
       </section>

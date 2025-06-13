@@ -39,7 +39,7 @@ interface SkillGroup {
 export default function SkillCard({ header, skills }: SkillGroup) {
   return (
     // entire div holding the header and skill/title div
-    <div className="bg-foreground mb-10 w-2/5 rounded-lg border-3 border-black p-3 pb-0 shadow-sm">
+    <div className="bg-testcolor mb-10 w-2/5 rounded-lg border-3 border-black p-3 pb-0 shadow-sm">
       <h1 className="pt-1 text-center text-3xl font-bold text-black">
         {header}
       </h1>
@@ -64,7 +64,7 @@ export default function SkillCard({ header, skills }: SkillGroup) {
               <h3 className="min-w-lg text-xl font-semibold text-gray-800">
                 {skill.title}
               </h3>
-              <p className="font-light text-gray-600">{skill.level}</p>
+              <p className="font-light text-gray-500">{skill.level}</p>
             </div>
           </div>
         ))}
