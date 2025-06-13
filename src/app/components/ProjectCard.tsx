@@ -1,5 +1,5 @@
 import { Project } from "../projects/projectData";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardProps {
@@ -31,7 +31,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {description}
       </h1>
 
-      <Link href={`/projects/${project.id}`}>
+      {/* <Link href={`/projects/${project.id}`}> */}
+      <Link href="https://www.youtube.com/watch?v=DawXx5WNeyE">
         <div className="cursor-pointer">View Project</div>
       </Link>
     </div>
