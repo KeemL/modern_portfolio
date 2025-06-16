@@ -75,6 +75,14 @@ export const projectsData: Project[] = [
   },
   {
     id: "proj7",
+    title: "Avengers: New Game",
+    description:
+      "Created using using C++ in Visual Studio Code for an MGBA(Gameboy) emulator.",
+    category: "Game Dev",
+    stack: ["C, Docker"],
+  },
+  {
+    id: "proj8",
     title: "CODENAME Brenda",
     description:
       "Live action script transformed into a vibration animation in Unreal Engine using originally made characters, props and processes supplemented with pre-made background assets.",
