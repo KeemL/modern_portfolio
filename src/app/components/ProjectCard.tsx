@@ -1,5 +1,5 @@
 import { Project } from "../projects/projectData";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardProps {
@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <div className="bg-vandyke m-4 flex h-[500px] w-4/5 flex-col justify-between rounded-lg border p-4 text-left md:shrink">
       <div className="flex flex-col gap-4">
         {imageUrl && (
-          <img
+          <Image
             src={imageUrl}
             alt={`${title} logo`}
             className="h-32 w-auto self-start rounded-md object-contain"

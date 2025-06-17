@@ -13,23 +13,23 @@ export default function About() {
       </button>
       <h1>About Me</h1>
       <p>
-        I’m an alumnus at the Georgia Institute of Technology, with a major in
+        {`I’m an alumnus at the Georgia Institute of Technology, with a major in
         Computational Media — an interdisciplinary program that blends
-        computing, digital design, and human-centered problem solving.
+        computing, digital design, and human-centered problem solving.`}
       </p>
       <p>
-        This background provides a unique perspective on technology, combining a
+        {`This background provides a unique perspective on technology, combining a
         strong foundation in programming with user-centered design principles,
-        supplying me with both technical precision and creative intent.
+        supplying me with both technical precision and creative intent.`}
       </p>
       <p>
-        At the heart of my work is a goal to build fulfilling experiences with
+        {`At the heart of my work is a goal to build fulfilling experiences with
         code, where I've created full-stack applications, games, and websites
-        that prioritize both function and experience.
+        that prioritize both function and experience.`}
       </p>
       <p>
-        I'm looking to employ my technical skills and determination to
-        contribute to work that makes an impact.
+        {`I'm looking to employ my technical skills and determination to
+        contribute to work that makes an impact.`}
       </p>
     </div>
   );
