@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <ul className="flex space-x-6 rounded-lg bg-white px-8 py-2 text-center text-3xl tracking-tight text-black shadow-md">
           <li>
-            <a href="#about" className="hover-underline-olive">
+            <a href="/about" className="hover-underline-olive">
               About Me
             </a>
           </li>

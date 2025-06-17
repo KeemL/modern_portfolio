@@ -1,27 +1,31 @@
 import Skills from "@/app/skills/page";
 import Projects from "@/app/projects/page";
-import About from "./about/page";
 import Navbar from "@/app/components/Navbar";
-// import Image from "next/image";
+import HomeIntro from "./components/HomeIntro";
+
+// import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-neutral-200">
-      {/* <Image
-        className="absolute right-5 bottom-0"
-        src="/images/downArrow.png"
-        alt="Down Arrow icon for navigation"
-        width={75}
-        height={75}
-      /> */}
-
       <Navbar />
+
+      <div className="fixed right-5 bottom-5 z-50 h-fit w-fit rotate-180 rounded-full border-4 border-black bg-neutral-500 p-5">
+        <Image
+          className="rotate-180"
+          src="/images/downArrow.png"
+          alt="Down Arrow icon for navigation"
+          width={50}
+          height={50}
+        />
+      </div>
 
       <section
         id="about"
         className="flex h-screen -translate-y-30 items-center justify-center"
       >
-        <About />
+        <HomeIntro />
       </section>
 
       <section id="skills" className="">

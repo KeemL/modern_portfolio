@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "motion": "^12.18.1",
     "newportfolio": "file:",
     "next": "15.3.1",
     "postcss": "^8.5.4",

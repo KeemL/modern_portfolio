@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "src/app/ui/projects.js",
     "src/app/ui/experiences.js",
-    "src/app/projects/[id]/page.tsx"
+    "src/app/projects/[projid]/page.tsx"
   ],
   "exclude": ["node_modules"]
 }

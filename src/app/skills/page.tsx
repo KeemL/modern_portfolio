@@ -1,4 +1,4 @@
-import SkillCard from "@/app/components/SkillCard";
+import SkillCard from "../components/SkillCard";
 
 export default function Skills() {
   return (
