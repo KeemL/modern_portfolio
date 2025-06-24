@@ -32,6 +32,7 @@ export const projectsData: Project[] = [
       "Health application that identifies and assists patients affected by environmental pollutants by alerting the severity of nearby locations based on their individual afflictions. Uses Google's Geocoding API to find current location through coordinates and Meersen's API to determine and calculate relevant pollutants and their severity levels.",
     category: "Applications",
     link: "https://www.youtube.com/watch?v=DawXx5WNeyE",
+    imageUrl: "/images/meeps_photo.png",
   },
   {
     id: "proj2",
@@ -41,6 +42,7 @@ export const projectsData: Project[] = [
     category: "Applications",
     stack: ["React", " Java", " Spring Boot"],
     link: "",
+    imageUrl: "/images/bookie_photo.png",
   },
 
   // {
@@ -74,7 +76,7 @@ export const projectsData: Project[] = [
     description:
       "An Unreal Engine game where players extract color from a vibrant island to repair their ship, exploring themes of postcolonialism and environmental sustainability.",
     category: "Game Dev",
-    stack: ["Unreal Engine, C++"],
+    stack: ["Unreal Engine", "C++"],
     link: "",
   },
   {
@@ -83,7 +85,7 @@ export const projectsData: Project[] = [
     description:
       "Created using using C++ in Visual Studio Code for an MGBA(Gameboy) emulator.",
     category: "Game Dev",
-    stack: ["C, Docker"],
+    stack: ["C", "Docker"],
     link: "",
   },
   {
