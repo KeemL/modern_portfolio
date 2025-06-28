@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <div>
       <div className="flex gap-4 py-4 text-2xl">
-        <h1 className="ml-14 place-self-center font-bold text-black">
+        <h1 className="text-accent ml-14 place-self-center font-bold">
           Filter:
         </h1>
         <CategoryButton

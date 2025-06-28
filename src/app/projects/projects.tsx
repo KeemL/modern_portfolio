@@ -14,9 +14,9 @@ export default function FilteredProjects({ category }: ProjectsProps) {
 
   // const { title, stack, description, video, imageUrl, link } = project;
   return (
-    <div className="m-4 grid grid-cols-2">
+    <div className="m-4 mx-auto grid max-w-7xl grid-cols-2 justify-center gap-y-2">
       {projects.map((project) => (
-        <div key={project.id} className="m-4">
+        <div key={project.id} className="">
           <ProjectCard key={project.id} project={project} />
         </div>
       ))}

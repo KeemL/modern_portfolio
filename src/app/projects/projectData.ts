@@ -59,7 +59,8 @@ export const projectsData: Project[] = [
       "A Unity-3D game where the player collects coins and completes QTEs to navigate a tense fast food situation.",
     category: "Game Dev",
     stack: ["Unity", "C#"],
-    link: "",
+    link: "https://drive.google.com/drive/folders/16lUtmPXGmNUISQCMeHnSDKGXo9XdSmJ0?usp=sharing",
+    imageUrl: "/images/mcds.png",
   },
   {
     id: "proj5",
@@ -68,7 +69,8 @@ export const projectsData: Project[] = [
       "A Unity-3D sandbox game where players explore a trap-filled island using physics-driven rocket cars to boost, bounce, and interact with the environment.",
     category: "Game Dev",
     stack: ["Unity", "C#", "Blender"],
-    link: "",
+    link: "https://drive.google.com/drive/folders/1QwtumkBVrWu5493Z4XrVKNqIklbKNtDq?usp=sharing",
+    imageUrl: "/images/rocketdrive.png",
   },
   {
     id: "proj6",
@@ -77,7 +79,8 @@ export const projectsData: Project[] = [
       "An Unreal Engine game where players extract color from a vibrant island to repair their ship, exploring themes of postcolonialism and environmental sustainability.",
     category: "Game Dev",
     stack: ["Unreal Engine", "C++"],
-    link: "",
+    link: "https://drive.google.com/drive/folders/1GdjjQrqcWVMA-3JvkDyPUbDdt3i8lAA4?usp=drive_link",
+    imageUrl: "/images/colorcraft.png",
   },
   {
     id: "proj7",
@@ -86,7 +89,8 @@ export const projectsData: Project[] = [
       "Created using using C++ in Visual Studio Code for an MGBA(Gameboy) emulator.",
     category: "Game Dev",
     stack: ["C", "Docker"],
-    link: "",
+    link: "https://youtu.be/SMDauKcvD0k",
+    imageUrl: "/images/avengers.png",
   },
   {
     id: "proj8",
@@ -96,5 +100,6 @@ export const projectsData: Project[] = [
     category: "Animation",
     stack: ["Unreal Engine", "Blender", "Photoshop"],
     link: "https://youtu.be/eXM4xO3hd6g",
+    imageUrl: "/images/brenda.png",
   },
 ];
