@@ -49,7 +49,7 @@ export default function SkillCard({ header, skills }: SkillGroup) {
           // individual, matching skill title div
           <div
             key={index}
-            className="my-6 flex w-3/4 space-x-2 place-self-center"
+            className="place-self-cente my-6 flex w-3/4 space-x-2"
           >
             {/* checkmark image icon */}
             <Image
@@ -60,11 +60,11 @@ export default function SkillCard({ header, skills }: SkillGroup) {
               alt={`Checkmark icon for ${skill.title}`}
             />
             {/* skill title and level text */}
-            <div>
+            <div className="flex self-center">
               <h3 className="min-w-lg text-xl font-semibold text-gray-800">
                 {skill.title}
               </h3>
-              <p className="font-light text-gray-500">{skill.level}</p>
+              {/* <p className="font-light text-gray-500">{skill.level}</p> */}
             </div>
           </div>
         ))}

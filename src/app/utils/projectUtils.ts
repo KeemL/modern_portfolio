@@ -1,4 +1,10 @@
-import { Project, ProjectCategory, projectsData } from "./projectData";
+import { notFound } from "next/navigation";
+
+import {
+  Project,
+  ProjectCategory,
+  projectsData,
+} from "../projects/projectData";
 
 export function validProjects(category: ProjectCategory): Project[] {
   let projs: Project[] = [];
@@ -20,3 +26,16 @@ function checkCategory(project: Project, category: ProjectCategory) {
     return project;
   }
 }
+
+export function getProjectById(id: String): Project {
+  const project = projectsData.find((p) => p.id === id);
+  // if (!project) {
+  //   return "{ notFound: true }";
+  // }
+  if (project === undefined) {
+    notFound();
+  }
+  return project;
+}
+
+// function checkProjectID(projectid: String);

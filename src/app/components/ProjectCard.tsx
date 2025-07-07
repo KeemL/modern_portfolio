@@ -1,6 +1,7 @@
 import { Project } from "../projects/projectData";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,8 +11,9 @@ interface ProjectCardProps {
 // Title, video clip, description of implementation, tech stack
 export default function ProjectCard({ project }: ProjectCardProps) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { title, stack, category, description, video, imageUrl, link } =
+  const { id, title, stack, category, description, video, imageUrl, link } =
     project;
+  const router = useRouter();
   return (
     <div className="bg-surface relative m-4 flex h-fit w-4/5 flex-col justify-between rounded-lg border p-4 text-left md:shrink">
       <div className="border-primary bg-primary text-background absolute top-4 right-4 m-2.5 rounded-md border-2 px-4 py-2 text-sm font-semibold shadow-[0_0_20px_6px_#007ea7]">
@@ -29,6 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               height={9} // Aspect ratio height
               layout="responsive"
               loading="lazy"
+              onClick={() => router.push(`/projects/${id}`)}
             />
           )}
         </div>
@@ -54,7 +57,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </h1> */}
         {/* <Link href={`/projects/${project.id}`}> */}
         {link && (
-          <Link href={link}>
+          <Link href={link} target="_blank" rel="noopener noreferrer">
             <div className="hover:bg-primary text-text hover:text-background w-fit cursor-pointer rounded-lg border-2 bg-neutral-900 px-4 py-2 font-semibold hover:translate-y-1">
               View Project
             </div>

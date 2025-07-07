@@ -1,5 +1,5 @@
 import { Project, ProjectCategory } from "./projectData";
-import { validProjects } from "./projectUtils";
+import { validProjects } from "../utils/projectUtils";
 import ProjectCard from "@/app/components/ProjectCard";
 
 // Created a prop interface since React passes an object of props, never raw values

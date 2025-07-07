@@ -11,11 +11,19 @@ export default function About() {
       >
         ← Back
       </button>
-      <div className="flex flex-col gap-4">
+      <div className="bg-primary flex w-2/5 flex-col gap-4 rounded-sm p-4 text-left">
         <h1>About Me</h1>
         <p>
-          {`I’m an alumnus at the Georgia Institute of Technology, with a major in
-        Computational Media — an interdisciplinary program that blends
+          {`I’m an alumnus at the Georgia Institute of Technology, with a major in`}{" "}
+          <a
+            href="https://www.gatech.edu/academics/degrees/bachelors/computational-media-bs"
+            className="text-white underline after:content-['_↗'] hover:text-blue-700"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Computational Media
+          </a>
+          {` — an interdisciplinary program that blends
         computing, digital design, and human-centered problem solving.`}
         </p>
         <p>
