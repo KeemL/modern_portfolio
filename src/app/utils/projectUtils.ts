@@ -27,7 +27,7 @@ function checkCategory(project: Project, category: ProjectCategory) {
   }
 }
 
-export function getProjectById(id: String): Project {
+export function getProjectById(id: string): Project {
   const project = projectsData.find((p) => p.id === id);
   // if (!project) {
   //   return "{ notFound: true }";

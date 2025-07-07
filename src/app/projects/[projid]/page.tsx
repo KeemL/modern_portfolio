@@ -3,12 +3,6 @@ import { getProjectById } from "@/app/utils/projectUtils";
 
 import { use } from "react";
 
-type paramsType = {
-  params: {
-    id: String;
-  };
-};
-
 // export default function Page({ params }: paramsType) {
 //   // console.log(params);
 //   // console.log(params.id);
