@@ -2,6 +2,7 @@ import { Project } from "../projects/projectData";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 interface ProjectCardProps {
   project: Project;
@@ -14,8 +15,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const { id, title, stack, category, description, video, imageUrl, link } =
     project;
   const router = useRouter();
+  const [isFlipped, setFlipped] = useState(false);
   return (
-    <div className="bg-surface relative m-4 flex h-fit w-4/5 flex-col justify-between rounded-lg border p-4 text-left md:shrink">
+    <div className="bg-surface relative m-4 flex h-fit flex-col justify-between rounded-lg border p-4 text-left md:shrink">
       <div className="border-primary bg-primary text-background absolute top-4 right-4 m-2.5 rounded-md border-2 px-4 py-2 text-sm font-semibold shadow-[0_0_20px_6px_#007ea7]">
         {category}
       </div>
@@ -56,13 +58,50 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {description}
         </h1> */}
         {/* <Link href={`/projects/${project.id}`}> */}
-        {link && (
-          <Link href={link} target="_blank" rel="noopener noreferrer">
-            <div className="hover:bg-primary text-text hover:text-background w-fit cursor-pointer rounded-lg border-2 bg-neutral-900 px-4 py-2 font-semibold hover:translate-y-1">
-              View Project
-            </div>
-          </Link>
-        )}
+        {/* for projects with video links to YouTube demos */}
+        <div className="flex gap-x-4">
+          {video && (
+            <Link
+              href={video}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Watch a YouTube demo video!"
+            >
+              <div className="hover:bg-primary text-text hover:text-background mt-2 flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
+                <div className="relative h-16 w-16 rounded-full fill-white">
+                  <Image
+                    src={"/images/youtube-button.svg"}
+                    alt={"YouTube Play Button Icon"}
+                    fill={true}
+                    className="fill-white"
+                  />
+                </div>
+                <div className="flex self-center">View Demo</div>
+              </div>
+            </Link>
+          )}
+          {/* for projects in the Game Dev category, display another button to Play the Game */}
+          {link && category == "Game Dev" && (
+            <Link
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Download the game.exe zip files and play yourself!"
+            >
+              <div className="hover:bg-primary text-text hover:text-background mt-2 flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
+                <div className="relative flex h-16 w-16 self-center rounded-full fill-white">
+                  <Image
+                    src={"/images/download-button.png"}
+                    alt={"YouTube Play Button Icon"}
+                    fill={true}
+                    className="fill-white"
+                  />
+                </div>
+                <div className="flex self-center">Play Game</div>
+              </div>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

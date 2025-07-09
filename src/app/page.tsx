@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-oxfordblue">
+    <div className="bg-oxfordblue overflow-x-hidden">
       <Navbar />
 
       <div className="fixed right-5 bottom-5 z-50 h-fit w-fit rotate-180 rounded-full border-4 border-black bg-neutral-500 p-5">
@@ -36,7 +36,7 @@ export default function Home() {
         <Skills />
       </section>
 
-      <section id="projects" className="pt-40 pb-20 text-center">
+      <section id="projects" className="mt-10 pt-40 pb-20 text-center">
         <p className="text-4xl text-gray-700"> Explore My</p>
         <h1 className="text-primary mb-4 text-6xl font-bold"> Projects </h1>
 

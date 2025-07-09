@@ -13,7 +13,7 @@ export default function CategoryButton({
 }: CategoryButtonProps) {
   const base = "w-40 rounded px-4 py-2 text-white transition";
   const active = "bg-accent";
-  const inactive = "bg-primary hover:bg-calmblue";
+  const inactive = "bg-primary hover:bg-surface";
 
   const buttonClass = `${base} ${selectedCategory === category ? active : inactive}`;
 

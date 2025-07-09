@@ -10,7 +10,6 @@ interface ProjectsProps {
 // This component calls valid projectrs for a list of projects under a certain category then creates a ProjectCard for each.
 export default function FilteredProjects({ category }: ProjectsProps) {
   const projects: Project[] = validProjects(category);
-  //   console.log("Rendering category:", category);
 
   // const { title, stack, description, video, imageUrl, link } = project;
   return (

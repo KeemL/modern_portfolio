@@ -39,8 +39,8 @@ interface SkillGroup {
 export default function SkillCard({ header, skills }: SkillGroup) {
   return (
     // entire div holding the header and skill/title div
-    <div className="bg-testcolor mb-10 w-2/5 rounded-lg border-3 border-black p-3 pb-0 shadow-sm">
-      <h1 className="pt-1 text-center text-3xl font-bold text-black">
+    <div className="bg-testcolor rounded-lg border-3 border-black p-3 pb-0 shadow-sm">
+      <h1 className="pt-1 text-center text-2xl font-bold text-neutral-100">
         {header}
       </h1>
       {/* removed the bg-amber-300 */}
@@ -49,13 +49,13 @@ export default function SkillCard({ header, skills }: SkillGroup) {
           // individual, matching skill title div
           <div
             key={index}
-            className="place-self-cente my-6 flex w-3/4 space-x-2"
+            className="my-4 flex w-3/4 space-x-1.5 place-self-center"
           >
             {/* checkmark image icon */}
             <Image
               src="/images/checkmark.png"
-              width={64}
-              height={64}
+              width={56}
+              height={56}
               quality={100}
               alt={`Checkmark icon for ${skill.title}`}
             />

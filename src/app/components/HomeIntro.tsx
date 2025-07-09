@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function HomeIntro() {
   return (
-    <div className="justify-center space-y-4 rounded-lg text-center font-bold text-black">
-      <p className="text-2xl text-gray-400"> {`Hello I'm`} </p>
+    <div className="align-center justify-center space-y-4 rounded-lg text-center font-bold text-black">
+      <p className="text-2xl text-gray-400"> {`Hello, I'm`} </p>
       <h1 className="text-6xl text-white">Hakeem Lingo</h1>
       <p className="text-3xl text-gray-400"> Coder, Animator, Creative.</p>
       {/* <div className="space flex justify-center gap-x-10">

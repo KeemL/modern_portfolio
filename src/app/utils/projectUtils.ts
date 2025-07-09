@@ -8,12 +8,12 @@ import {
 
 export function validProjects(category: ProjectCategory): Project[] {
   let projs: Project[] = [];
-  //   console.log(projs.length);
-  //   console.log(projectsData.length);
+
+  //uses filter function to pass every project array entry into the checkCategory function
   projs = projectsData.filter((projectsData) =>
     checkCategory(projectsData, category),
   );
-  //   console.log(projs.length);
+
   return projs;
 }
 
@@ -32,6 +32,9 @@ export function getProjectById(id: string): Project {
   // if (!project) {
   //   return "{ notFound: true }";
   // }
+
+  //undefined check otherwise an error is thrown
+  // uses default notFound page from Next.js
   if (project === undefined) {
     notFound();
   }

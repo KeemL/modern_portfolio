@@ -20,7 +20,7 @@ export interface Project {
   description: string;
   category: ProjectCategory;
   imageUrl?: string;
-  link: string;
+  link?: string;
 }
 
 export const projectsData: Project[] = [
@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     description:
       "Health application that identifies and assists patients affected by environmental pollutants by alerting the severity of nearby locations based on their individual afflictions. Uses Google's Geocoding API to find current location through coordinates and Meersen's API to determine and calculate relevant pollutants and their severity levels.",
     category: "Applications",
-    link: "https://www.youtube.com/watch?v=DawXx5WNeyE",
+    video: "https://www.youtube.com/watch?v=DawXx5WNeyE",
     imageUrl: "/images/meeps_photo.png",
   },
   {
@@ -89,7 +89,7 @@ export const projectsData: Project[] = [
       "Created using using C++ in Visual Studio Code for an MGBA(Gameboy) emulator.",
     category: "Game Dev",
     stack: ["C", "Docker"],
-    link: "https://youtu.be/SMDauKcvD0k",
+    video: "https://youtu.be/SMDauKcvD0k",
     imageUrl: "/images/avengers.png",
   },
   {
@@ -99,7 +99,7 @@ export const projectsData: Project[] = [
       "Live action script transformed into a vibration animation in Unreal Engine using originally made characters, props and processes supplemented with pre-made background assets.",
     category: "Animation",
     stack: ["Unreal Engine", "Blender", "Photoshop"],
-    link: "https://youtu.be/eXM4xO3hd6g",
+    video: "https://youtu.be/eXM4xO3hd6g",
     imageUrl: "/images/brenda.png",
   },
 ];
