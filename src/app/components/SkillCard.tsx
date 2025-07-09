@@ -39,18 +39,15 @@ interface SkillGroup {
 export default function SkillCard({ header, skills }: SkillGroup) {
   return (
     // entire div holding the header and skill/title div
-    <div className="bg-testcolor rounded-lg border-3 border-black p-3 pb-0 shadow-sm">
+    <div className="bg-testcolor max-w-200px w-full rounded-lg border-3 border-black p-3 pb-0 shadow-sm">
       <h1 className="pt-1 text-center text-2xl font-bold text-neutral-100">
         {header}
       </h1>
       {/* removed the bg-amber-300 */}
-      <div className="grid grid-cols-2 place-content-center gap-2 rounded-md">
+      <div className="bg-calmblue my-4 grid grid-cols-2 place-content-center items-center gap-2 rounded-md">
         {skills.map((skill, index) => (
           // individual, matching skill title div
-          <div
-            key={index}
-            className="my-4 flex w-3/4 space-x-1.5 place-self-center"
-          >
+          <div key={index} className="my-4 flex space-x-1.5">
             {/* checkmark image icon */}
             <Image
               src="/images/checkmark.png"
@@ -60,8 +57,8 @@ export default function SkillCard({ header, skills }: SkillGroup) {
               alt={`Checkmark icon for ${skill.title}`}
             />
             {/* skill title and level text */}
-            <div className="flex self-center">
-              <h3 className="min-w-lg text-xl font-semibold text-gray-800">
+            <div className="flex w-fit self-center">
+              <h3 className="text-xl font-semibold text-gray-800">
                 {skill.title}
               </h3>
               {/* <p className="font-light text-gray-500">{skill.level}</p> */}

@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const { id, title, stack, category, description, video, imageUrl, link } =
     project;
   const router = useRouter();
-  const [isFlipped, setFlipped] = useState(false);
+  // const [isFlipped, setFlipped] = useState(false);
   return (
     <div className="bg-surface relative m-4 flex h-fit flex-col justify-between rounded-lg border p-4 text-left md:shrink">
       <div className="border-primary bg-primary text-background absolute top-4 right-4 m-2.5 rounded-md border-2 px-4 py-2 text-sm font-semibold shadow-[0_0_20px_6px_#007ea7]">
