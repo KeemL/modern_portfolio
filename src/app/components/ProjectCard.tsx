@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </h1> */}
         {/* <Link href={`/projects/${project.id}`}> */}
         {/* for projects with video links to YouTube demos */}
-        <div className="flex gap-x-4">
+        <div className="mt-2 flex gap-x-4">
           {video && (
             <Link
               href={video}
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               title="Watch a YouTube demo video!"
             >
-              <div className="hover:bg-primary text-text hover:text-background mt-2 flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
+              <div className="hover:bg-primary text-text hover:text-background flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
                 <div className="relative h-16 w-16 rounded-full fill-white">
                   <Image
                     src={"/images/youtube-button.svg"}
@@ -88,7 +88,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               title="Download the game.exe zip files and play yourself!"
             >
-              <div className="hover:bg-primary text-text hover:text-background mt-2 flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
+              <div className="hover:bg-primary text-text hover:text-background flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
                 <div className="relative flex h-16 w-16 self-center rounded-full fill-white">
                   <Image
                     src={"/images/download-button.png"}
@@ -100,6 +100,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <div className="flex self-center">Play Game</div>
               </div>
             </Link>
+          )}
+          {!link && !video && (
+            <div className="rounded-lg border-2 border-white bg-gray-900 p-4 text-xl font-semibold text-neutral-600">
+              Build in Progress
+            </div>
           )}
         </div>
       </div>

@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
       "Library book app that individualizes the experience for each user through personal wishlists, current reading lists and recommendations based on their interests. Uses OpenLibrary's API for access to a collection of books.",
     category: "Applications",
     stack: ["React", " Java", " Spring Boot"],
-    link: "",
+
     imageUrl: "/images/bookie_photo.png",
   },
 
