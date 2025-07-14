@@ -44,7 +44,7 @@ export default function SkillCard({ header, skills }: SkillGroup) {
         {header}
       </h1>
       {/* removed the bg-amber-300 */}
-      <div className="bg-calmblue my-4 grid grid-cols-2 place-content-center items-center gap-2 rounded-md">
+      <div className="my-4 grid grid-cols-2 place-content-center items-center gap-2 rounded-md">
         {skills.map((skill, index) => (
           // individual, matching skill title div
           <div key={index} className="my-4 flex space-x-1.5">
