@@ -70,13 +70,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <div className="hover:bg-primary text-text hover:text-background flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
                 <div className="relative h-16 w-16 rounded-full fill-white">
                   <Image
-                    src={"/images/youtube-button.svg"}
+                    src={"/images/projects_logos/youtube-button.svg"}
                     alt={"YouTube Play Button Icon"}
                     fill={true}
                     className="fill-white"
                   />
                 </div>
-                <div className="flex self-center">View Demo</div>
+                <div className="pointer-events-none flex self-center select-none">
+                  View Demo
+                </div>
               </div>
             </Link>
           )}

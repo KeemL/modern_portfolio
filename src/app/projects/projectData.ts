@@ -58,7 +58,7 @@ export const projectsData: Project[] = [
     description:
       "A Unity-3D game where the player collects coins and completes QTEs to navigate a tense fast food situation.",
     category: "Game Dev",
-    stack: ["Unity", "C#"],
+    stack: ["Unity", "C#", "Blender"],
     link: "https://drive.google.com/drive/folders/16lUtmPXGmNUISQCMeHnSDKGXo9XdSmJ0?usp=sharing",
     imageUrl: "/images/mcds.png",
   },
@@ -78,7 +78,7 @@ export const projectsData: Project[] = [
     description:
       "An Unreal Engine game where players extract color from a vibrant island to repair their ship, exploring themes of postcolonialism and environmental sustainability.",
     category: "Game Dev",
-    stack: ["Unreal Engine", "C++"],
+    stack: ["Unreal Engine", "C++", "Blender"],
     link: "https://drive.google.com/drive/folders/1GdjjQrqcWVMA-3JvkDyPUbDdt3i8lAA4?usp=drive_link",
     imageUrl: "/images/colorcraft.png",
   },

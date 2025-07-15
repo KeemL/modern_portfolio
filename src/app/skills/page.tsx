@@ -6,37 +6,118 @@ export default function Skills() {
       <SkillCard
         header="Languages & Frameworks"
         skills={[
-          { title: "Java", level: "Experienced" },
-          { title: "Python", level: "Experienced" },
-          { title: "C++", level: "Experienced" },
-          { title: "JavaScript", level: "Experienced" },
-          { title: "TypeScript", level: "Experienced" },
-          { title: "SQL", level: "Proficient" },
-          { title: "React", level: "Proficient" },
-          { title: "Node.js", level: "Proficient" },
-          { title: "Spring Boot", level: "Experienced" },
+          {
+            title: "Java",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/java.svg",
+          },
+          {
+            title: "Python",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/python.svg",
+          },
+          {
+            title: "C++",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/cplusplus.svg",
+          },
+          {
+            title: "JavaScript",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/javascript.svg",
+          },
+          {
+            title: "TypeScript",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/typescript.svg",
+          },
+          {
+            title: "SQL",
+            level: "Proficient",
+            imageUrl: "images/skills_logos/sql.svg",
+          },
+          {
+            title: "React",
+            level: "Proficient",
+            imageUrl: "images/skills_logos/react.svg",
+          },
+          {
+            title: "Node.js",
+            level: "Proficient",
+            imageUrl: "images/skills_logos/nodedotjs.svg",
+          },
+          {
+            title: "Spring Boot",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/springboot.svg",
+          },
         ]}
       />
 
       <SkillCard
         header="Development Tools & Infrastructure"
         skills={[
-          { title: "Git", level: "Experienced" },
-          { title: "Docker", level: "Beginner" },
-          { title: "Postman", level: "Beginner" },
-          { title: "Figma", level: "Experienced" },
-          { title: "GitHub Actions ", level: "Proficient" },
+          {
+            title: "Git",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/git.svg",
+          },
+          {
+            title: "Docker",
+            level: "Beginner",
+            imageUrl: "images/skills_logos/docker.svg",
+          },
+          {
+            title: "Postman",
+            level: "Beginner",
+            imageUrl: "images/skills_logos/postman.svg",
+          },
+          {
+            title: "Figma",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/figma.svg",
+          },
+          {
+            title: "GitHub Actions ",
+            level: "Proficient",
+            imageUrl: "images/skills_logos/githubactions.svg",
+          },
         ]}
       />
 
       <SkillCard
         header="Creative & Game Development"
         skills={[
-          { title: "Unreal Engine", level: "Experienced" },
-          { title: "Unity", level: "Experienced" },
-          { title: "Photoshop", level: "Experienced" },
-          { title: "Premiere Pro", level: "Experienced" },
-          { title: "Tailwind CSS", level: "Experienced" },
+          {
+            title: "Unreal Engine",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/unrealengine.svg",
+          },
+          {
+            title: "Unity",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/unity.svg",
+          },
+          {
+            title: "Photoshop",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/photoshop.svg",
+          },
+          {
+            title: "Premiere Pro",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/premierepro.svg",
+          },
+          {
+            title: "Tailwind CSS",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/tailwindcss.svg",
+          },
+          {
+            title: "Blender",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/blender.svg",
+          },
         ]}
       />
     </div>

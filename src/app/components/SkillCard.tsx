@@ -3,6 +3,7 @@ import Image from "next/image";
 interface Skill {
   title: string;
   level: string;
+  imageUrl?: string;
 }
 
 interface SkillGroup {
@@ -47,15 +48,17 @@ export default function SkillCard({ header, skills }: SkillGroup) {
       <div className="my-4 grid grid-cols-2 place-content-center items-center gap-2 rounded-md">
         {skills.map((skill, index) => (
           // individual, matching skill title div
-          <div key={index} className="my-4 flex space-x-1.5">
+          <div key={index} className="my-4 flex space-x-3">
             {/* checkmark image icon */}
-            <Image
-              src="/images/checkmark.png"
-              width={56}
-              height={56}
-              quality={100}
-              alt={`Checkmark icon for ${skill.title}`}
-            />
+            {skill.imageUrl && (
+              <Image
+                src={skill.imageUrl}
+                width={56}
+                height={56}
+                quality={100}
+                alt={`Checkmark icon for ${skill.title}`}
+              />
+            )}
             {/* skill title and level text */}
             <div className="flex w-fit self-center">
               <h3 className="text-xl font-semibold text-gray-800">
