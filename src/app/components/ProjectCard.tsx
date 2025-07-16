@@ -67,9 +67,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               title="Watch a YouTube demo video!"
             >
-              <div className="hover:bg-primary text-text hover:text-background flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
+              <div className="hover:bg-primary text-text hover:text-background flex h-16 w-44 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
                 <div className="relative h-16 w-16 rounded-full fill-white">
                   <Image
+                    aria-hidden
                     src={"/images/projects_logos/youtube-button.svg"}
                     alt={"YouTube Play Button Icon"}
                     fill={true}
@@ -93,7 +94,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <div className="hover:bg-primary text-text hover:text-background flex h-16 w-42 cursor-pointer rounded-lg border-2 bg-neutral-800 pl-2 font-semibold hover:translate-y-1">
                 <div className="relative flex h-16 w-16 self-center rounded-full fill-white">
                   <Image
-                    src={"/images/download-button.png"}
+                    aria-hidden
+                    src={"/images/projects_logos/download-button.png"}
                     alt={"YouTube Play Button Icon"}
                     fill={true}
                     className="fill-white"

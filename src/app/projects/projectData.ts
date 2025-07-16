@@ -32,7 +32,7 @@ export const projectsData: Project[] = [
       "Health application that identifies and assists patients affected by environmental pollutants by alerting the severity of nearby locations based on their individual afflictions. Uses Google's Geocoding API to find current location through coordinates and Meersen's API to determine and calculate relevant pollutants and their severity levels.",
     category: "Applications",
     video: "https://www.youtube.com/watch?v=DawXx5WNeyE",
-    imageUrl: "/images/meeps_photo.png",
+    imageUrl: "/images/projects_logos/meeps_photo.png",
   },
   {
     id: "proj2",
@@ -42,7 +42,7 @@ export const projectsData: Project[] = [
     category: "Applications",
     stack: ["React", " Java", " Spring Boot"],
 
-    imageUrl: "/images/bookie_photo.png",
+    imageUrl: "/images/projects_logos/bookie_photo.png",
   },
 
   // {
@@ -60,7 +60,7 @@ export const projectsData: Project[] = [
     category: "Game Dev",
     stack: ["Unity", "C#", "Blender"],
     link: "https://drive.google.com/drive/folders/16lUtmPXGmNUISQCMeHnSDKGXo9XdSmJ0?usp=sharing",
-    imageUrl: "/images/mcds.png",
+    imageUrl: "/images/projects_logos/mcds.png",
   },
   {
     id: "proj5",
@@ -70,7 +70,7 @@ export const projectsData: Project[] = [
     category: "Game Dev",
     stack: ["Unity", "C#", "Blender"],
     link: "https://drive.google.com/drive/folders/1QwtumkBVrWu5493Z4XrVKNqIklbKNtDq?usp=sharing",
-    imageUrl: "/images/rocketdrive.png",
+    imageUrl: "/images/projects_logos/rocketdrive.png",
   },
   {
     id: "proj6",
@@ -80,7 +80,7 @@ export const projectsData: Project[] = [
     category: "Game Dev",
     stack: ["Unreal Engine", "C++", "Blender"],
     link: "https://drive.google.com/drive/folders/1GdjjQrqcWVMA-3JvkDyPUbDdt3i8lAA4?usp=drive_link",
-    imageUrl: "/images/colorcraft.png",
+    imageUrl: "/images/projects_logos/colorcraft.png",
   },
   {
     id: "proj7",
@@ -90,7 +90,7 @@ export const projectsData: Project[] = [
     category: "Game Dev",
     stack: ["C", "Docker"],
     video: "https://youtu.be/SMDauKcvD0k",
-    imageUrl: "/images/avengers.png",
+    imageUrl: "/images/projects_logos/avengers.png",
   },
   {
     id: "proj8",
@@ -100,6 +100,6 @@ export const projectsData: Project[] = [
     category: "Animation",
     stack: ["Unreal Engine", "Blender", "Photoshop"],
     video: "https://youtu.be/eXM4xO3hd6g",
-    imageUrl: "/images/brenda.png",
+    imageUrl: "/images/projects_logos/brenda.png",
   },
 ];

@@ -4,22 +4,22 @@ import Navbar from "@/app/components/Navbar";
 import HomeIntro from "./components/HomeIntro";
 
 // import { motion } from "motion/react";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-oxfordblue overflow-x-hidden">
       <Navbar />
 
-      <div className="fixed right-5 bottom-5 z-50 h-fit w-fit rotate-180 rounded-full border-4 border-black bg-neutral-500 p-5">
+      {/* <div className="fixed right-5 bottom-5 z-50 h-fit w-fit rotate-180 rounded-full border-4 border-black bg-neutral-500 p-5">
         <Image
           className="rotate-180"
-          src="/images/downArrow.png"
+          src="/images/general_icons/downArrow.png"
           alt="Down Arrow icon for navigation"
           width={50}
           height={50}
         />
-      </div>
+      </div> */}
 
       <section
         id="about"

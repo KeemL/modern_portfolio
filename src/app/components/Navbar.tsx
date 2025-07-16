@@ -2,7 +2,9 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 flex h-20 items-center justify-between bg-black px-8 text-white">
       {/* Left: Name */}
-      <div className="text-cerulean text-3xl font-bold">LINGO LOGIC</div>
+      <div aria-hidden="true" className="text-cerulean text-3xl font-bold">
+        LINGO LOGIC
+      </div>
 
       {/* Center: Nav Links in white box */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

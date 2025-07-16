@@ -52,6 +52,7 @@ export default function SkillCard({ header, skills }: SkillGroup) {
             {/* checkmark image icon */}
             {skill.imageUrl && (
               <Image
+                aria-hidden
                 src={skill.imageUrl}
                 width={56}
                 height={56}
