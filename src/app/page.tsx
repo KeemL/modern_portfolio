@@ -8,7 +8,8 @@ import HomeIntro from "./components/HomeIntro";
 
 export default function Home() {
   return (
-    <div className="bg-oxfordblue overflow-x-hidden">
+    <div className="bg-oxfordblue relative overflow-x-hidden">
+      {/* removed bg-plus-repeat from the top div */}
       <Navbar />
 
       {/* <div className="fixed right-5 bottom-5 z-50 h-fit w-fit rotate-180 rounded-full border-4 border-black bg-neutral-500 p-5">

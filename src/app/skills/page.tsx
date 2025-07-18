@@ -42,9 +42,9 @@ export default function Skills() {
             imageUrl: "images/skills_logos/react.svg",
           },
           {
-            title: "Node.js",
-            level: "Proficient",
-            imageUrl: "images/skills_logos/nodedotjs.svg",
+            title: "Tailwind CSS",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/tailwindcss.svg",
           },
           {
             title: "Spring Boot",
@@ -55,7 +55,7 @@ export default function Skills() {
       />
 
       <SkillCard
-        header="Development Tools & Infrastructure"
+        header="Tools & Infrastructure"
         skills={[
           {
             title: "Git",
@@ -68,19 +68,40 @@ export default function Skills() {
             imageUrl: "images/skills_logos/docker.svg",
           },
           {
+            title: "Node.js",
+            level: "Proficient",
+            imageUrl: "images/skills_logos/nodedotjs.svg",
+          },
+          {
             title: "Postman",
             level: "Beginner",
             imageUrl: "images/skills_logos/postman.svg",
           },
+
           {
-            title: "Figma",
-            level: "Experienced",
-            imageUrl: "images/skills_logos/figma.svg",
-          },
-          {
-            title: "GitHub Actions ",
+            title: "GitHub Actions",
             level: "Proficient",
             imageUrl: "images/skills_logos/githubactions.svg",
+          },
+          {
+            title: "Vercel",
+            level: "Beginner",
+            imageUrl: "images/skills_logos/vercel.svg",
+          },
+          {
+            title: "Microsoft Excel",
+            level: "Intermediate",
+            imageUrl: "/images/skills_logos/ms-excel.png",
+          },
+          {
+            title: "Apache Maven",
+            level: "Beginner",
+            imageUrl: "images/skills_logos/apachemaven.svg",
+          },
+          {
+            title: "Trello",
+            level: "Proficient",
+            imageUrl: "images/skills_logos/trello.svg",
           },
         ]}
       />
@@ -108,15 +129,21 @@ export default function Skills() {
             level: "Experienced",
             imageUrl: "images/skills_logos/premierepro.svg",
           },
-          {
-            title: "Tailwind CSS",
-            level: "Experienced",
-            imageUrl: "images/skills_logos/tailwindcss.svg",
-          },
+
           {
             title: "Blender",
             level: "Experienced",
             imageUrl: "images/skills_logos/blender.svg",
+          },
+          {
+            title: "Autodesk Maya",
+            level: "Beginner",
+            imageUrl: "images/skills_logos/autodeskmaya.svg",
+          },
+          {
+            title: "Figma",
+            level: "Experienced",
+            imageUrl: "images/skills_logos/figma.svg",
           },
         ]}
       />

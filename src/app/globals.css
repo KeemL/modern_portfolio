@@ -67,6 +67,15 @@ body {
   transform: scaleX(1);
 }
 
+@layer utilities {
+  .bg-plus-repeat {
+    background-image: url("/background.svg");
+    background-repeat: repeat;
+    background-size: 100px auto; /* Adjust size as needed */
+    background-position: top left;
+  }
+}
+
 /* glow animation for category descriptor on ProjectCard */
 /* @keyframes glowPulse {
   0%,
