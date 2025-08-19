@@ -1,3 +1,4 @@
+import { button } from "motion/react-client";
 import Link from "next/link";
 
 export default function HomeIntro() {
@@ -17,11 +18,11 @@ export default function HomeIntro() {
           </button>
         </Link>
 
-        <Link href="#contact">
+        <a href="mailto:hakeemlingo@gatech.edu?subject=Let's Connect&body=Hi Hakeem,">
           <button className="hover:bg-cerulean rounded-lg border bg-white p-4 hover:text-black">
             Get In Touch
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   );
