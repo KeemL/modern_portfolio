@@ -21,7 +21,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="https://outlook.office.com/mail/deeplink/compose?to=hakeemlingo@gatech.edu&subject=Portfolio%20Inquiry"
+              href="mailto:hakeemlingo@gatech.edu?subject=Let's Connect&body=Hi Hakeem,"
               target="_blank"
               rel="noopener noreferrer"
               className="hover-underline-primary"

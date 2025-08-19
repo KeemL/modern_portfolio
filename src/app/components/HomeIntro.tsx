@@ -1,4 +1,3 @@
-import { button } from "motion/react-client";
 import Link from "next/link";
 
 export default function HomeIntro() {
