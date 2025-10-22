@@ -38,6 +38,11 @@ export default function Projects() {
           selectedCategory={selectedCategory}
           onClick={setSelectedCategory}
         />
+        <CategoryButton
+          category="UI & Visual Design"
+          selectedCategory={selectedCategory}
+          onClick={setSelectedCategory}
+        />
       </div>
       <div className="">
         <FilteredProjects category={selectedCategory} />

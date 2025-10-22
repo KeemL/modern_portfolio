@@ -9,10 +9,10 @@ interface ProjectCardProps {
 }
 
 //ProjectCard to give info about my past projects
-// Title, video clip, description of implementation, tech stack
+// Title, video clip, description of implementation, tech tools
 export default function ProjectCard({ project }: ProjectCardProps) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { id, title, stack, category, description, video, imageUrl, link } =
+  const { id, title, tools, category, description, video, imageUrl, link } =
     project;
   const router = useRouter();
   // const [isFlipped, setFlipped] = useState(false);
@@ -31,6 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               alt={`${title} logo`}
               width={16} // Aspect ratio width
               height={9} // Aspect ratio height
+              //without layout command the image will not show
               layout="responsive"
               loading="lazy"
               onClick={() => router.push(`/projects/${id}`)}
@@ -41,9 +42,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex flex-col gap-y-3 px-1 text-left">
           <h1 className="text-xl font-bold sm:text-2xl">{title}</h1>
 
-          {/* generates each tech stack entry into a div */}
+          {/* generates each tech tools entry into a div */}
           <h2 className="flex flex-wrap gap-2 text-sm font-medium sm:text-base">
-            {stack.map((tech, i) => (
+            {tools.map((tech, i) => (
               <div
                 className="border-muted text-secondary rounded-lg border bg-[rgba(0,126,167,0.3)] px-2 py-1"
                 key={i}
